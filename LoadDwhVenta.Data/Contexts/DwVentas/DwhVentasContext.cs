@@ -1,6 +1,5 @@
-﻿using LoadDwhVenta.Data.Contexts.Nortwind;
+﻿
 using LoadDwhVenta.Data.Entities.DwVentas;
-using LoadDwhVenta.Data.Entities.DwVentas.Configurations;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -8,12 +7,8 @@ namespace LoadDwhVenta.Data.Contexts.DwVentas
 {
     public partial class DwhVentasContext : DbContext
     {
-        public DwhVentasContext()
-        {
-        }
 
-        public DwhVentasContext(DbContextOptions<NorthwindContext> options)
-            : base(options)
+        public DwhVentasContext(DbContextOptions<DwhVentasContext> options): base(options)
         {
         }
 
@@ -21,7 +16,6 @@ namespace LoadDwhVenta.Data.Contexts.DwVentas
 
         public DbSet<DimCustomer> DimCustomers { get; set; }
 
-        public DbSet<DimDate> DimDates { get; set; }
 
         public DbSet<DimEmployee> DimEmployees { get; set; }
 
@@ -35,20 +29,7 @@ namespace LoadDwhVenta.Data.Contexts.DwVentas
 
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new DimCategoryConfiguration());
-            modelBuilder.ApplyConfiguration(new DimCustomerConfiguration());
-            modelBuilder.ApplyConfiguration(new DimDateConfiguration());
-            modelBuilder.ApplyConfiguration(new DimEmployeeConfiguration());
-            modelBuilder.ApplyConfiguration(new DimProductConfiguration());
-            modelBuilder.ApplyConfiguration(new DimShipperConfiguration());
-            modelBuilder.ApplyConfiguration(new FactClientesAtendidoConfiguration());
-            modelBuilder.ApplyConfiguration(new FactOrderConfiguration());
+        
 
-            OnModelCreatingPartial(modelBuilder);
-        }
-
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

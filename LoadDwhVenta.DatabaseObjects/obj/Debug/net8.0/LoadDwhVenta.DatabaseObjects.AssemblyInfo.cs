@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoadDwhVenta.DatabaseObjects")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9bc2eb85574c5020098c429aa53a510d18ce0d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoadDwhVenta.DatabaseObjects")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoadDwhVenta.DatabaseObjects")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

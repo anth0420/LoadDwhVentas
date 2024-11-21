@@ -1,11 +1,18 @@
 ﻿
-namespace LoadDwhVenta.Data.Entities.DwVentas;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public partial class DimEmployee
+namespace LoadDwhVenta.Data.Entities.DwVentas
 {
-    public int EmployeeKey { get; set; }
+    [Table("DimEmployees")]
+    public partial class DimEmployee
+    {
+        [Key]
+        public int EmployeeKey { get; set; }
 
-    public string? EmployeeName { get; set; }
+        public string? EmployeeName { get; set; }
 
+        public int EmployeeId { get; set; }
 
+    }
 }

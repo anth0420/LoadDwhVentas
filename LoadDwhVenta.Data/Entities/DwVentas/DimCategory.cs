@@ -1,10 +1,18 @@
 ﻿
 
-namespace LoadDwhVenta.Data.Entities.DwVentas;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public partial class DimCategory
+namespace LoadDwhVenta.Data.Entities.DwVentas
 {
-    public int CategoryKey { get; set; }
+    [Table("DimCategories")]
+    public partial class DimCategory
+    {
+        [Key]
+        public int CategoryKey { get; set; }
 
-    public string? CategoryName { get; set; }
+        public string? CategoryName { get; set; }
+
+        public int CategoryId { get; set; }
+    }
 }

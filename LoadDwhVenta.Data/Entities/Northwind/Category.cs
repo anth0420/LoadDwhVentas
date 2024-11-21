@@ -1,15 +1,18 @@
 ﻿
-namespace LoadDwhVenta.Data.Entities.Northwind;
 
-public partial class Category
+namespace LoadDwhVenta.Data.Entities.Northwind
 {
-    public int CategoryId { get; set; }
 
-    public string? CategoryName { get; set; }
+    public partial class Category
+    {
+        public int CategoryId { get; set; }
 
-    public string? Description { get; set; }
+        public string? CategoryName { get; set; }
+
+        public string? Description { get; set; }
 
 
 
 
+    }
 }

@@ -1,10 +1,13 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace LoadDwhVenta.Data.Entities.DwVentas;
 
 public partial class FactOrder
 {
-    public int OrderNumber { get; set; }
+    [Key]
+    public int? OrderNumber { get; set; }
 
     public int? DateKey { get; set; }
 

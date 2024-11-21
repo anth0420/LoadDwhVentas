@@ -5,8 +5,7 @@ namespace LoadDwhVenta.Data.Contexts.Nortwind;
 
 public partial class NorthwindContext : DbContext
 {
-    public NorthwindContext(DbContextOptions<NorthwindContext> options)
-        : base(options)
+    public NorthwindContext(DbContextOptions<NorthwindContext> options) : base(options)
     {
     }
 

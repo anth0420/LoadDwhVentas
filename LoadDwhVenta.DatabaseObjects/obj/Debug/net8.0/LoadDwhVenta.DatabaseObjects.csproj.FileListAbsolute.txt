@@ -10,3 +10,4 @@ C:\Users\Anthony\source\repos\LoadDwhVenta\LoadDwhVenta.DatabaseObjects\obj\Debu
 C:\Users\Anthony\source\repos\LoadDwhVenta\LoadDwhVenta.DatabaseObjects\obj\Debug\net8.0\refint\LoadDwhVenta.DatabaseObjects.dll
 C:\Users\Anthony\source\repos\LoadDwhVenta\LoadDwhVenta.DatabaseObjects\obj\Debug\net8.0\LoadDwhVenta.DatabaseObjects.pdb
 C:\Users\Anthony\source\repos\LoadDwhVenta\LoadDwhVenta.DatabaseObjects\obj\Debug\net8.0\ref\LoadDwhVenta.DatabaseObjects.dll
+C:\Users\Anthony\source\repos\LoadDwhVenta\LoadDwhVenta.DatabaseObjects\obj\Debug\net8.0\LoadDwhVenta.DatabaseObjects.sourcelink.json
