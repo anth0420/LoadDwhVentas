@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoadDwhVenta.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9bc2eb85574c5020098c429aa53a510d18ce0d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9db033a111a4b00b4c60ca9f576adfe0e03475a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoadDwhVenta.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoadDwhVenta.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
