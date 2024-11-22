@@ -1,16 +1,20 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LoadDwhVenta.Data.Entities.DwVentas;
-
-public partial class FactClientesAtendido
+namespace LoadDwhVenta.Data.Entities.DwVentas
 {
-    [Key]
-    public int? ClienteAtendidoKey { get; set; }
+    [Table("FactClientesAtendidos")]
 
-    public int? EmployeeKey { get; set; }
+    public partial class FactClientesAtendido
+    {
+        [Key]
+        public int ClienteAtendidoId { get; set; }
 
-    public int? TotalClientes { get; set; }
+        public int EmployeeKey { get; set; }
+
+        public int TotalClientes { get; set; }
 
 
+    }
 }

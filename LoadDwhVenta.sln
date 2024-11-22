@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadDwhVenta.Data", "LoadDw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadDwhVenta.WorkerService", "LoadDwhVenta.WorkerService\LoadDwhVenta.WorkerService.csproj", "{7B0CFF53-9581-4160-8338-E166E211812E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadDwhVenta.Models", "LoadDwhVenta.Models\LoadDwhVenta.Models.csproj", "{33CA9CBD-57A4-4E53-AEC7-E64E3A775B5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7B0CFF53-9581-4160-8338-E166E211812E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0CFF53-9581-4160-8338-E166E211812E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0CFF53-9581-4160-8338-E166E211812E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CA9CBD-57A4-4E53-AEC7-E64E3A775B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CA9CBD-57A4-4E53-AEC7-E64E3A775B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CA9CBD-57A4-4E53-AEC7-E64E3A775B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CA9CBD-57A4-4E53-AEC7-E64E3A775B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

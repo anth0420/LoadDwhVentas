@@ -5,7 +5,8 @@ namespace LoadDwhVenta.Data.Contexts.Nortwind;
 
 public partial class NorthwindContext : DbContext
 {
-    public NorthwindContext(DbContextOptions<NorthwindContext> options) : base(options)
+    public NorthwindContext(DbContextOptions<NorthwindContext> options) 
+        : base(options)
     {
     }
 
@@ -44,6 +45,11 @@ public partial class NorthwindContext : DbContext
     public DbSet<ViewClient> ViewClients { get; set; }
 
     public DbSet<ViewProducto> ViewProductos { get; set; }
+    public DbSet<VwServedCustomer> VwServedCustomers { get; set; }
+
+    public  DbSet<Vwventa> Vwventas { get; set; }
+
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -303,6 +309,23 @@ public partial class NorthwindContext : DbContext
 
             entity.Property(e => e.Direccion).HasMaxLength(60);
             entity.Property(e => e.Nombre).HasMaxLength(30);
+        });
+        modelBuilder.Entity<VwServedCustomer>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("VW_ServedCustomers", "DWH");
+
+
+        });
+
+        modelBuilder.Entity<Vwventa>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("VWVentas", "DWH");
+
+
         });
 
         modelBuilder.Entity<ViewProducto>(entity =>

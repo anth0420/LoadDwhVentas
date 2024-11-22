@@ -1,27 +1,22 @@
-﻿
+﻿    using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-using System.ComponentModel.DataAnnotations;
-
-namespace LoadDwhVenta.Data.Entities.DwVentas;
-
-public partial class FactOrder
+namespace LoadDwhVenta.Data.Entities.DwVentas
 {
-    [Key]
-    public int? OrderNumber { get; set; }
+    [Table("FactOrders")]
+    public partial class FactOrder
+    {
+        [Key]
+        public int OrderNumber { get; set; } // Clave primaria
 
-    public int? DateKey { get; set; }
+        public int ProductKey { get; set; }  // Clave foránea de producto (de Vwventa.ProductId)
+        public int EmployeeKey { get; set; } // Clave foránea de empleado (de Vwventa.EmployeeId)
+        public int ShipperKey { get; set; }  // Clave foránea de shipper (de Vwventa.ShipperId)
+        public int CustomerKey { get; set; } // Clave foránea de cliente (de Vwventa.CustomerId)
 
-    public int? ProductKey { get; set; }
+        public string? Country { get; set; } // País (de Vwventa.Country)
 
-    public int? EmployeeKey { get; set; }
-
-    public int? ShipperKey { get; set; }
-
-    public int? CustomerKey { get; set; }
-
-    public string? City { get; set; }
-
-    public decimal? TotalVentas { get; set; }
-
-    public int? CantidadVentas { get; set; }
+        public decimal TotalVentas { get; set; } // Total de ventas (de Vwventa.TotalVentas)
+        public decimal? CantidadVentas { get; set; } // Cantidad vendida (de Vwventa.Cantidad)
+    }
 }
